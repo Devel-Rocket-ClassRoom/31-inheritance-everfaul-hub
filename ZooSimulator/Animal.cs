@@ -1,10 +1,16 @@
 ﻿using System;
 class Animal
 {
-    private string Name;
-    private int Age;
+    public string Name;
+    public int Age;
     protected string _sound;
 
+    public Animal(string name, int age, string sound)
+    {
+        Name = name;
+        Age = age;
+        _sound = sound;
+    }
     public void Eat()
     {
         Console.WriteLine($"{Name}이(가) 먹이를 먹습니다");
@@ -13,7 +19,7 @@ class Animal
     {
         Console.WriteLine($"{Name}: {_sound}!");
     }
-    public void DisplayInfo();
+    public void DisplayInfo()
     {
         Console.WriteLine($"이름: {Name}, 나이: {Age}살 ");
     }
