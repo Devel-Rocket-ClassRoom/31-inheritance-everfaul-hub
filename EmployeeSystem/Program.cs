@@ -1,4 +1,25 @@
 using System;
 
-// README.md를 읽고 코드를 작성하세요.
-Console.WriteLine("코드를 작성하세요.");
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine("=== 직원 급여 시스템 ===");
+        Console.WriteLine();
+
+        Manager manger = new Manager("김부장", 5000000, 1000000);
+        Developer developer = new Developer("이개발", 4000000, 10);
+        Intern intern = new Intern("박인턴");
+
+        manger.PrintInfo();
+        Console.WriteLine();
+
+        developer.PrintInfo();
+        Console.WriteLine();
+
+        intern.PrintInfo();
+    }
+}
+
+
+
